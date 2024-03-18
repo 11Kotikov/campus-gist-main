@@ -1,0 +1,29 @@
+spring:
+#  connect mysql
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop # update
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/college_gist_db
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #endOfConnection
+  thymeleaf:
+    cache: false
+#spring:
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/spring_jwt
+#    username: root
+#    password: 1234
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#  jpa:
+#    hibernate:
+#      ddl-auto: create-drop
+#    show-sql: true
+#    properties:
+#      hibernate:
+#        format_sql: true
+#    database: mysql
+#    database-platform: org.hibernate.dialect.MySQL8Dialect
