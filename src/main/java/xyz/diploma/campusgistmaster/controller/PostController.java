@@ -1,6 +1,5 @@
 package xyz.diploma.campusgistmaster.controller;
 
-import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,7 +16,6 @@ import xyz.diploma.campusgistmaster.service.PublishedPostService;
 import java.util.List;
 
 @Controller
-@Data
 public class PostController {
     @Autowired
     private PostService postService;
