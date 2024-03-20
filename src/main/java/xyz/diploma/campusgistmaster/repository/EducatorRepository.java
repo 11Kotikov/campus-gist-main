@@ -6,4 +6,5 @@ import xyz.diploma.campusgistmaster.model.Educator;
 
 @Repository
 public interface EducatorRepository extends JpaRepository<Educator, Long> {
+
 }
