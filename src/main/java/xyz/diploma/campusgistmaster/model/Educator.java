@@ -28,4 +28,6 @@ public class Educator {
     @Column(name = "password")
     private String password;
 
+    @Enumerated (EnumType.STRING)
+    UserRole role;
 }
